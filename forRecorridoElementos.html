@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+  
+
+</head>
+<body>
+    <script>
+        var trabajadores=new Array();
+        var persona="";
+        var contador=0;
+
+
+while(persona!="salir"){
+ persona=prompt("Introduce trabajador");
+ //aqui le decimos que almacene en el array llamado trabajadores, las personas que vaya introduciendo el usuario por pantalla
+ 
+ trabajadores=[contador]=persona;
+ //el contador va incrementando en uno y marcara las posiciones del array
+ contador++;
+}
+// trabajadores.pop();
+
+for(var i=0;i<trabajadores.length;i++){
+ //nos mostrara los trabajadores almacenados en el array
+ document.write(trabajadores[i]  );
+ //trabajadores.pop();
+
+}
+    </script>
+
+</body>
+</html>
